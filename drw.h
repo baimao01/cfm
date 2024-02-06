@@ -1,5 +1,6 @@
 /*
- * UI layer handle
+ * UI layer handle.
+ * All about UI things handle.
  */
 
 typedef struct Menu Menu;

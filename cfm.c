@@ -9,6 +9,7 @@ enum { MoveUp, MoveDown, MoveLeft, MoveRight }; /* move direction */
 
 unsigned int event;
 
+static Cursor cursor;
 static int running = 1;
 
 void cursor_move(const Arg *move_direction)

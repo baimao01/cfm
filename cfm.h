@@ -1,3 +1,11 @@
+/*
+ * About this file's copyright: LENGTH macro comes from
+ *   the dwm of suckless. (https://dwm.suckless.org)
+ *   Arg and Key struct comes form
+ *   the dwm of suckless. (https://dwm.suckless.org)
+ * I am a beginner in C language :(. <The code is terrible>
+ */
+
 #ifndef _CFM_H
 #define _CFM_H
 
@@ -20,9 +28,10 @@ typedef struct {
 } Key;
 
 /* cursor object struct */
-typedef struct Cursor {
-	int x, y;
-	int sel_num;
+typedef struct {
+	unsigned int x, y, y_offset; /* Y is current selection file */
+	unsigned int sel_panel;
+	unsigned int sel_num;
 } Cursor;
 
 void cursor_move(const Arg *move_direction);
